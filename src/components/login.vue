@@ -4,7 +4,7 @@
     <div class="form">
       <div class="redesSociales">
         <button @click="login" id="google"><font-awesome-icon :icon="['fab', 'google-plus']" /> Entrar con Google</button>
-        <button  @click="login" id="twiiter"><font-awesome-icon :icon="['fab', 'twitter']" /> Entrar con twiiter</button>
+        <button  @click="login" id="twiiter"><font-awesome-icon :icon="['fab', 'twitter']" /> Entrar con Twitter</button>
         <button @click="login" id="github"><font-awesome-icon :icon="['fab', 'github']" /> Git hub</button>
       </div>
     <form action="">
