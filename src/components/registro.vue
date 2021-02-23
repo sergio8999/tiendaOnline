@@ -3,7 +3,7 @@
     <h1>Registro</h1>
     <div class="form">
       <div class="redesSociales">
-        <button @click="login"><font-awesome-icon :icon="['fab', 'google-plus']" /> Entrar con Google</button>
+        <button @click="login" id="google"><font-awesome-icon :icon="['fab', 'google-plus']" /> Entrar con Google</button>
         <button  @click="login" id="twiiter"><font-awesome-icon :icon="['fab', 'twitter']" /> Entrar con Twitter</button>
         <button @click="login" id="github"><font-awesome-icon :icon="['fab', 'github']" /> Git hub</button>
       </div>
@@ -54,8 +54,8 @@ import Firebase from '../db.js'
       }
    },
   methods: {
-    login:function() {
-      Firebase.login();
+    login:function(e) {
+      Firebase.login(e.target.id);
     },
     crearUsuario:function(){
       if(this.datoContrasena == this.datoContrasena2){
