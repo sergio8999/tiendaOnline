@@ -59,7 +59,7 @@ export default  {
       let articulo = this.listaCarrito.filter((producto)=>{
         return producto.id== e.target.id;
       });
-      let total = Number(articulo[0].precio * e.target.value).toFixed(2);
+      let total =  parseFloat(articulo[0].precio * e.target.value);
       db.collection('carrito').doc(e.target.id).
         update({
           unidades: e.target.value,
