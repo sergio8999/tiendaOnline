@@ -1,0 +1,17 @@
+/*función q devuelve color*/
+@function color ($color-name){
+    @return map-get($colors, $color-name);
+}
+
+/*tamaños fuente*/
+$font-sizes:(
+    xl:1.2rem,
+    lg:1.4rem,
+    md:1.6rem,
+    sm:1.8rem,
+    xs:1.8rem
+);
+/*función q devuelve un tamaño*/ 
+@function size($size){
+    @return map-get($font-sizes, $size);
+}

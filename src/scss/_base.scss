@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+$color-dark:#262626;
+$color-black:#000;
+$color-primary:#36A693;
+$color-secondary:#bbb;
+$color-white:#fff;
+$color-red:red;
+
+$font-dancing:'Dancing Script',cursive;
+$font-josefin:'Josefin Sans',Sans-serif;
+$font-nunito:'Nunito',Sans-serif;
+#app {
+    @include response(xl){
+        font-size: size(xl);
+    }
+
+    @include response(lg){
+      font-size: size(md);
+    }
+
+    @include response(md){
+        font-size: size(md);
+    }
+
+    @include response(sm){
+        font-size: size(sm);
+    } 
+
+    @include response(xs){
+        font-size: size(xs);
+    }
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
